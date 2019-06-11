@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0);
+            color : black;
+        }
+        h1 {
+            text-align: center;
+        }
+        div.tp {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        div.ct {
+            /*border: 1px solid black;*/
+            padding-left: 40%;
+            padding-top: 200px;
+        }
+        input {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="tp">
+        <h1>WORD COUNTING PROGRAM</h1>
+    </div>
+    <div class="ct">
+    <a href="{%url 'about'%}">ABOUT</a>
+        <form action="{%url 'result'%}">
+            <textarea cols="50" rows="20" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+</html>
